@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% load static %}
+{% comment %} First {% endcomment %}
+
+    {% comment %} title {% endcomment %}
+        {% block title %}Generales|Blog-Django{% endblock %}
+
+    {% comment %} Header {% endcomment %}
+        {% block titulo %}Post Generales{% endblock %}
+        {% block img_hero %}{% static 'img/post-bg.jpg' %}{% endblock %}
+
+    {% comment %} Contenido {% endcomment %}
+        {% block post-title %}Titulo de Generales{% endblock %}
+        {% block post-subtitle %}subtitle de Generales{% endblock %}
+        {% block hyper-autor %}#HolaMundo{% endblock %}
+        {% block name-autor %}Manuel Mendoza{% endblock %}
+        {% block date-autor %}Febrero 20, 2020{% endblock %}

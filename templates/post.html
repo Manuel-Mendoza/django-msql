@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+{% load static %}
+<!-- Index- -->
+
+<!--Head-->
+  {% block title %}Post|Blog-Django{% endblock %}
+
+<!--Header-->
+  {% block titulo %}
+
+  	<h1>{{post.titulo}}</h1> 
+  	<p> {{post.descripcion}} </p>
+  	<small>Escrito Por: {{post.autor}} {{post.fecha_Create}} </small>
+  
+  {% endblock %}
+  
+  {% block img_hero %} {{post.imagen}} {% endblock %}
+
+
+<!-- Contenid -->
+  {% block contenido %}
+  <div class="container"></div>
+  	{{post.contenido | safe}}
+  {% endblock contenido %}
+
+<!-- Busqueda -->
+  {% block busqueda %}
+    
+  {% endblock busqueda %}
+
+<!-- Footer -->
+  {% block instagram %}{% endblock %} 
