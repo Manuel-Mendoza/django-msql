@@ -2,7 +2,7 @@ asgiref==3.2.3
 certifi==2019.11.28
 defusedxml==0.6.0
 diff-match-patch==20181111
-Django==3.0.3
+Django==3.0.14
 django-ckeditor==5.9.0
 django-import-export==2.0.2
 django-js-asset==1.2.2
